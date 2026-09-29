@@ -1,0 +1,32 @@
+{
+  "name": "campus-life-debugged",
+  "version": "1.0.0",
+  "description": "BPUT Hackathon 2026 PS07 - Campus Life, Debugged - Full Stack Campus Operations Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"node server/server.js\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "seed": "node server/seed.js"
+  },
+  "keywords": [
+    "bput-hackathon-2026",
+    "campus-life-debugged",
+    "student-portal",
+    "hostel-management",
+    "admin-dashboard"
+  ],
+  "author": "BPUT Hackathon Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^11.8.1",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
