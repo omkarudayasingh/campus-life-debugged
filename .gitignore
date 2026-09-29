@@ -3,9 +3,8 @@ client/node_modules/
 .env
 .env.*
 *.log
-*.sqlite
-*.sqlite3
-*.db
+*.sqlite*
+*.db*
 screenshot_*.png
 .DS_Store
 Thumbs.db
